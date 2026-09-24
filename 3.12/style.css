@@ -1,0 +1,22 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background-color: #e9ecef; padding: 20px; }
+.container { max-width: 450px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+form { display: flex; gap: 10px; margin-bottom: 10px; }
+input { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; outline: none; }
+input:focus { border-color: #007bff; }
+button { padding: 8px 12px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background-color: #0056b3; }
+
+.btn-danger { background-color: #dc3545; width: 100%; margin-top: 15px; }
+.btn-danger:hover { background-color: #c82333; }
+.aksi-btn button { padding: 4px 8px; font-size: 12px; margin-left: 5px; }
+
+ul { list-style: none; padding: 0; margin: 10px 0; }
+li { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-bottom: 1px solid #eee; }
+.teks-tugas { flex: 1; word-break: break-word; margin-right: 10px; }
+.selesai { text-decoration: line-through; color: #888; }
+
+.sembunyi { display: none !important; }
+.error { color: #dc3545; font-size: 13px; margin-bottom: 10px; }
+.empty-state { text-align: center; color: #6c757d; font-style: italic; margin-top: 20px; }
+#statusTugas { font-weight: bold; color: #495057; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 10px; }

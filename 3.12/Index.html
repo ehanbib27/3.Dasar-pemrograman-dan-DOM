@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Tugas - Subbab 3.11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Manajemen Tugas</h2>
+
+        <!-- Form untuk tambah tugas -->
+        <form id="formTugas">
+            <input type="text" id="inputTugas" placeholder="Ketik tugas baru di sini...">
+            <button type="submit">Tambah</button>
+        </form>
+
+        <!-- Tempat peringatan error -->
+        <div id="pesanError" class="sembunyi error"></div>
+
+        <!-- Modifikasi: Penghitung tugas -->
+        <p id="statusTugas">Tugas belum selesai: 0</p>
+
+        <!-- Empty state (keadaan kosong) -->
+        <div id="emptyState" class="empty-state">
+            Belum ada tugas saat ini.
+        </div>
+
+        <!-- Tempat daftar tugas -->
+        <ul id="daftarTugas"></ul>
+
+        <!-- Tantangan: Tombol hapus masal -->
+        <button id="btnHapusSelesai" class="sembunyi btn-danger">Hapus yang Selesai</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

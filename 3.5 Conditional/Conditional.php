@@ -6,4 +6,4 @@ echo "Tidak valid";
 echo "Lulus";
 } else {
 echo "Belajar lagi";
-}?>
+}

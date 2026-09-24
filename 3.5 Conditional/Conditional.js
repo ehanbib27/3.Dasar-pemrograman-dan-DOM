@@ -1,8 +1,11 @@
-const nilai = 75;
+for (const nilai of [-1, 0, 74,]) {
+let hasil;
 if (nilai < 0 || nilai > 100) {
-console.log("Tidak valid");
+hasil = "Tidak valid";
 } else if (nilai >= 75) {
-console.log("Lulus");
+hasil = "Lulus";
 } else {
-console.log("Belajar lagi");
+hasil = "Belajar lagi";
+}
+console.log(nilai + ": " + hasil);
 }

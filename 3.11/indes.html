@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Barang Lokal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pencarian Data Barang</h2>
+        
+        <!-- Formulir pencarian dengan event submit -->
+        <form id="formPencarian">
+            <input type="text" id="inputCari" placeholder="Masukkan nama barang...">
+            <button type="submit">Cari</button>
+        </form>
+
+        <!-- Tempat peringatan jika input kosong -->
+        <div id="pesanError" class="sembunyi error"></div>
+
+        <!-- Empty state jika data belum dicari atau tidak ditemukan -->
+        <div id="emptyState" class="empty-state">
+            Silakan ketik nama barang untuk mencari (Contoh: Buku, Pensil).
+        </div>
+
+        <!-- Tempat daftar hasil pencarian ditampilkan -->
+        <ul id="daftarHasil"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
