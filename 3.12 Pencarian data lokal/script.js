@@ -85,21 +85,25 @@ function renderDOM() {
 // Menangani Event Form Submit
 formTugas.addEventListener("submit", function(event) {
     event.preventDefault(); // Cegah reload browser
-    
+
     const judulInput = inputTugas.value.trim();
+
+    // TAMBAHKAN DUA BARIS INI UNTUK CEK DI CONSOLE:
+    console.log("Input diketik:", judulInput);
+    console.log("Isi array dataTugas saat ini:", dataTugas);
 
     // Validasi input kosong
     if (judulInput === "") {
         pesanError.textContent = "Data harus diisi, tidak boleh kosong!";
         pesanError.classList.remove("sembunyi");
         inputTugas.focus(); // Kembalikan fokus ke kotak input
-        return; 
+        return;
     }
 
     // Jika sukses, sembunyikan error dan masukkan data baru
     pesanError.classList.add("sembunyi");
     dataTugas.push({ judul: judulInput, selesai: false });
-    
+
     inputTugas.value = ""; // Kosongkan form
     renderDOM();
 });
@@ -112,6 +116,3 @@ btnHapusSelesai.addEventListener("click", function() {
     });
     renderDOM();
 });
-
-// Panggil render saat pertama kali dimuat
-renderDOM();

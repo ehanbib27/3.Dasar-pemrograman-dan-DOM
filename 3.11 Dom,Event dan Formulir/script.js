@@ -5,7 +5,8 @@ const dataBarang = [
     { nama: "Penggaris Besi", kategori: "Alat Tulis", stok: 10 },
     { nama: "Penghapus", kategori: "Alat Tulis", stok: 20 },
     { nama: "Spidol Hitam", kategori: "Alat Tulis", stok: 5 },
-    { nama: "Kertas HVS", kategori: "Kertas", stok: 100 }
+    { nama: "Kertas HVS", kategori: "Kertas", stok: 100 },
+    { nama: "Laptop", kategori: "Alat Kerja", stok: 5 },
 ];
 
 // 2. Mengambil referensi DOM
@@ -29,7 +30,7 @@ formPencarian.addEventListener("submit", function(event) {
     
     // VALIDASI: Tolak input jika kosong
     if (kataKunci === "") {
-        pesanError.textContent = "Kolom pencarian tidak boleh kosong!";
+        pesanError.textContent = "Kok kosong😡😡!";
         pesanError.classList.remove("sembunyi");
         daftarHasil.classList.add("sembunyi");
         emptyState.classList.add("sembunyi");
